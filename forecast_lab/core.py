@@ -140,6 +140,7 @@ class ProphetWrapper(ForecastWrapper):
             estimator_params,
             fit_params
         )
+        self.estimator_class.add_country_holidays("US")
 
     def fit(
         self,
